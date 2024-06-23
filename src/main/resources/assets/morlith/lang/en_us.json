@@ -1,5 +1,22 @@
 {
   "item.morlith.raw_uranium": "Raw Uranium",
   "item.morlith.uranium": "Uranium",
+  "item.morlith.raw_penchblende": "Raw Penchblende",
+  "item.morlith.penchblende": "Penchblende",
+  "item.morlith.raw_uranophase": "Raw Uranophase",
+  "item.morlith.uranophase": "Uranophase",
+  "item.morlith.raw_tobernite": "Raw Tobernite",
+  "item.morlith.tobernite": "Tobernite",
+  "item.morlith.raw_autunite": "Raw Autunite",
+  "item.morlith.autunite": "Autunite",
+  "item.morlith.raw_thorium": "Raw Thorium",
+  "item.morlith.thorium": "Thorium",
+  "item.morlith.raw_thorite": "Raw Thorite",
+  "item.morlith.thorite": "Thorite",
+  "item.morlith.raw_thorianite": "Raw Thorianite",
+  "item.morlith.thorianite": "Thorianite",
+  "item.morlith.raw_brannerite": "Raw Brannerite",
+  "item.morlith.brannerite": "Brannerite",
+
   "itemGroup.morlith.main": "Morlith"
 }
