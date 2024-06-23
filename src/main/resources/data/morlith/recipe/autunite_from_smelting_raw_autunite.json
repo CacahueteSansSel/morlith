@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "autunite",
+  "ingredient":
+  {
+    "item": "morlith:raw_autunite"
+  },
+  "result":
+  {
+    "id": "morlith:autunite"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "uranophase",
+  "ingredient":
+  {
+    "item": "morlith:raw_uranophase"
+  },
+  "result":
+  {
+    "id": "morlith:uranophase"
+  }
+}
