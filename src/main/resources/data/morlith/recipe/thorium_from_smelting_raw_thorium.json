@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "thorium",
+  "ingredient":
+  {
+    "item": "morlith:raw_thorium"
+  },
+  "result":
+  {
+    "id": "morlith:thorium"
+  }
+}

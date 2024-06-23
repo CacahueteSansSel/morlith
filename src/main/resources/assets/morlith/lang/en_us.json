@@ -18,5 +18,24 @@
   "item.morlith.raw_brannerite": "Raw Brannerite",
   "item.morlith.brannerite": "Brannerite",
 
+  "block.morlith.uranium_block_ore": "Deepslate Uranium Ore",
+  "block.morlith.uranium_block": "Uranium Tank",
+  "block.morlith.penchblende_block_ore": "Deepslate Penchblende Ore",
+  "block.morlith.penchblende_block": "Penchblende Tank",
+  "block.morlith.uranophase_block_ore": "Deepslate uranophase Ore",
+  "block.morlith.uranophase_block": "Uranophase Tank",
+  "block.morlith.tobernite_block_ore": "Deepslate Tobernite Ore",
+  "block.morlith.tobernite_block": "Tobernite Tank",
+  "block.morlith.autunite_block_ore": "Deepslate Autunite Ore",
+  "block.morlith.autunite_block": "Autunite Tank",
+  "block.morlith.thorium_block_ore": "Deepslate Thorium Ore",
+  "block.morlith.thorium_block": "Thorium Tank",
+  "block.morlith.thorite_block_ore": "Deepslate Thorite Ore",
+  "block.morlith.thorite_block": "Thorite Tank",
+  "block.morlith.thorianite_block_ore": "Deepslate Thorianite Ore",
+  "block.morlith.thorianite_block": "Thorianite Tank",
+  "block.morlith.brannerite_block_ore": "Deepslate Brannerite Ore",
+  "block.morlith.brannerite_block": "Brannerite Tank",
+
   "itemGroup.morlith.main": "Morlith"
 }

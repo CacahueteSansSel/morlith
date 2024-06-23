@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "morlith:block/ore/uranophase_block_ore"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "variants":
+  {
+    "":
+    {
+      "model": "morlith:block/ore/thorium_block_ore"
+    }
+  }
+}
