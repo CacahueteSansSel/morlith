@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "morlith:raw_uranium"
+  },
+  "result": {
+    "id": "morlith:uranium"
+  },
+  "cookingtime": 2
+}
