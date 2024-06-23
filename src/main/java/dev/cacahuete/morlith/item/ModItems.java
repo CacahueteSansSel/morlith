@@ -1,12 +1,14 @@
 package dev.cacahuete.morlith.item;
 
 import dev.cacahuete.morlith.Morlith;
+import dev.cacahuete.morlith.tab.ModTabs;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
+import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -54,26 +56,10 @@ public class ModItems
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() == CreativeModeTabs.REDSTONE_BLOCKS)
-        {
-            event.accept(RAW_URANIUM);
-            event.accept(URANIUM);
-            event.accept(RAW_PENCHBLENDE);
-            event.accept(PENCHBLENDE);
-            event.accept(RAW_URANOPHASE);
-            event.accept(URANOPHASE);
-            event.accept(RAW_TOBERNITE);
-            event.accept(TOBERNITE);
-            event.accept(RAW_AUTUNITE);
-            event.accept(AUTUNITE);
-            event.accept(RAW_THORIUM);
-            event.accept(THORIUM);
-            event.accept(RAW_THORITE);
-            event.accept(THORITE);
-            event.accept(RAW_THORIANITE);
-            event.accept(THORIANITE);
-            event.accept(RAW_BRANNERITE);
-            event.accept(BRANNERITE);
+        if (event.getTabKey() != ModTabs.MAIN_TAB.getKey()) return;
+
+        for (DeferredHolder<Item, ? extends Item> item : ITEMS.getEntries()) {
+            event.accept(item.get());
         }
     }
 
