@@ -2,6 +2,7 @@ package dev.cacahuete.morlith;
 
 import com.mojang.logging.LogUtils;
 import dev.cacahuete.morlith.block.ModBlocks;
+import dev.cacahuete.morlith.entity.ModEntities;
 import dev.cacahuete.morlith.item.ModItems;
 import dev.cacahuete.morlith.tab.ModTabs;
 import net.neoforged.bus.api.IEventBus;
@@ -10,6 +11,7 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
@@ -39,6 +41,7 @@ public class Morlith
         ModItems.ITEMS.register(modEventBus);
         ModBlocks.BLOCKS.register(modEventBus);
         ModTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

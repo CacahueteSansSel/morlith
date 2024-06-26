@@ -2,12 +2,10 @@ package dev.cacahuete.morlith.item;
 
 import dev.cacahuete.morlith.Morlith;
 import dev.cacahuete.morlith.block.ModBlocks;
+import dev.cacahuete.morlith.entity.ModEntities;
 import dev.cacahuete.morlith.tab.ModTabs;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -86,14 +84,25 @@ public class ModItems
     public static final DeferredItem<BlockItem> BRANNERITE_BLOCK_ORE = ITEMS.registerSimpleBlockItem("brannerite_block_ore", ModBlocks.BRANNERITE_BLOCK_ORE);
     public static final DeferredItem<BlockItem> BRANNERITE_BLOCK = ITEMS.registerSimpleBlockItem("brannerite_block", ModBlocks.BRANNERITE_BLOCK);
 
-
+    public static final DeferredItem<Item> BAYAN_SPAWN_EGG = ITEMS.register("bayan_spawn_egg",
+        () -> new SpawnEggItem(ModEntities.BAYAN.get(), 0xFFAAFFFF, 0xFF000044, new Item.Properties()));
+    public static final DeferredItem<Item> WHITE_HAND_SPAWN_EGG = ITEMS.register("white_hand_spawn_egg",
+            () -> new SpawnEggItem(ModEntities.WHITE_HAND.get(), 0xFFFFFFFF, 0xFF000000, new Item.Properties()));
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if (event.getTabKey() != ModTabs.MAIN_TAB.getKey()) return;
+        if (event.getTabKey() == ModTabs.MAIN_TAB.getKey()) {
+            for (DeferredHolder<Item, ? extends Item> item : ITEMS.getEntries()) {
+                event.accept(item.get());
+            }
 
-        for (DeferredHolder<Item, ? extends Item> item : ITEMS.getEntries()) {
-            event.accept(item.get());
+            return;
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
+            for (DeferredHolder<Item, ? extends Item> item : ITEMS.getEntries()) {
+                if (item.get() instanceof SpawnEggItem) event.accept(item.get());
+            }
         }
     }
 }

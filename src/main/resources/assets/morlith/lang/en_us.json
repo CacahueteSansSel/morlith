@@ -17,6 +17,8 @@
   "item.morlith.thorianite": "Thorianite",
   "item.morlith.raw_brannerite": "Raw Brannerite",
   "item.morlith.brannerite": "Brannerite",
+  "item.morlith.bayan_spawn_egg": "Bayan Spawn Egg",
+  "item.morlith.white_hand_spawn_egg": "White Hand Spawn Egg",
 
   "block.morlith.uranium_block_ore": "Deepslate Uranium Ore",
   "block.morlith.uranium_block": "Uranium Tank",
@@ -36,6 +38,9 @@
   "block.morlith.thorianite_block": "Thorianite Tank",
   "block.morlith.brannerite_block_ore": "Deepslate Brannerite Ore",
   "block.morlith.brannerite_block": "Brannerite Tank",
+
+  "entity.morlith.bayan": "Bayan",
+  "entity.morlith.white_hand": "White Hand",
 
   "itemGroup.morlith.main": "Morlith"
 }
