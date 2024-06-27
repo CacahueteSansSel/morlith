@@ -1,7 +1,6 @@
-package dev.cacahuete.morlith.renderer;
+package dev.cacahuete.morlith.entity.client;
 
-import dev.cacahuete.morlith.entity.BayanEntity;
-import dev.cacahuete.morlith.model.entity.BayanModel;
+import dev.cacahuete.morlith.entity.custom.BayanEntity;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import software.bernie.geckolib.renderer.GeoEntityRenderer;
 

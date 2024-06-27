@@ -1,4 +1,4 @@
-package dev.cacahuete.morlith.entity;
+package dev.cacahuete.morlith.entity.custom;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -6,13 +6,7 @@ import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
-import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
-import net.minecraft.world.entity.animal.IronGolem;
-import net.minecraft.world.entity.animal.Turtle;
-import net.minecraft.world.entity.monster.Zombie;
-import net.minecraft.world.entity.monster.ZombifiedPiglin;
-import net.minecraft.world.entity.npc.AbstractVillager;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import software.bernie.geckolib.animatable.GeoEntity;
@@ -36,7 +30,7 @@ public class BayanEntity extends PathfinderMob implements GeoEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.25);
     }
 
-    protected BayanEntity(EntityType<? extends PathfinderMob> type, Level level) {
+    public BayanEntity(EntityType<? extends PathfinderMob> type, Level level) {
         super(type, level);
 
         cache = GeckoLibUtil.createInstanceCache(this);

@@ -1,9 +1,8 @@
-package dev.cacahuete.morlith.model.entity;
+package dev.cacahuete.morlith.entity.client;
 
 import dev.cacahuete.morlith.Morlith;
-import dev.cacahuete.morlith.entity.BayanEntity;
+import dev.cacahuete.morlith.entity.custom.BayanEntity;
 import net.minecraft.resources.ResourceLocation;
-import software.bernie.geckolib.animatable.GeoAnimatable;
 import software.bernie.geckolib.model.GeoModel;
 
 public class BayanModel extends GeoModel<BayanEntity> {

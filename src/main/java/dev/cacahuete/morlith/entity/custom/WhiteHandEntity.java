@@ -1,4 +1,4 @@
-package dev.cacahuete.morlith.entity;
+package dev.cacahuete.morlith.entity.custom;
 
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Mob;
@@ -41,7 +41,7 @@ public class WhiteHandEntity extends PathfinderMob implements GeoEntity {
                 .add(Attributes.MOVEMENT_SPEED, 0.15);
     }
 
-    protected WhiteHandEntity(EntityType<? extends PathfinderMob> type, Level level) {
+    public WhiteHandEntity(EntityType<? extends PathfinderMob> type, Level level) {
         super(type, level);
 
         cache = GeckoLibUtil.createInstanceCache(this);

@@ -1,10 +1,11 @@
 package dev.cacahuete.morlith.entity;
 
 import dev.cacahuete.morlith.Morlith;
-import dev.cacahuete.morlith.renderer.BayanEntityRenderer;
-import dev.cacahuete.morlith.renderer.WhiteHandEntityRenderer;
+import dev.cacahuete.morlith.entity.custom.BayanEntity;
+import dev.cacahuete.morlith.entity.custom.WhiteHandEntity;
+import dev.cacahuete.morlith.entity.client.BayanEntityRenderer;
+import dev.cacahuete.morlith.entity.client.WhiteHandEntityRenderer;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.bus.api.IEventBus;

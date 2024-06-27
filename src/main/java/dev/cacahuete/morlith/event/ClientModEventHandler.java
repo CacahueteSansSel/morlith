@@ -2,7 +2,6 @@ package dev.cacahuete.morlith.event;
 
 import dev.cacahuete.morlith.Morlith;
 import dev.cacahuete.morlith.entity.ModEntities;
-import dev.cacahuete.morlith.renderer.BayanEntityRenderer;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;

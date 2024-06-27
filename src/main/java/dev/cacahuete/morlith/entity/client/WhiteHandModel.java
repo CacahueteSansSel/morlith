@@ -1,8 +1,7 @@
-package dev.cacahuete.morlith.model.entity;
+package dev.cacahuete.morlith.entity.client;
 
 import dev.cacahuete.morlith.Morlith;
-import dev.cacahuete.morlith.entity.BayanEntity;
-import dev.cacahuete.morlith.entity.WhiteHandEntity;
+import dev.cacahuete.morlith.entity.custom.WhiteHandEntity;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 
